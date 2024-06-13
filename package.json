@@ -1,0 +1,38 @@
+{
+  "name": "plugin-menu",
+  "version": "0.0.1",
+  "description": "The plugin adds menubar of milkdown",
+  "type": "module",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "style.css"
+  ],
+  "keywords": [
+    "milkdown",
+    "milkdown-plugin"
+  ],
+  "author": "m.chiba <chibam496@gmail.com>",
+  "peerDependencies": {
+    "@milkdown/core": ">=7.0.0",
+    "@milkdown/prose": ">=7.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@milkdown/core": "^7.3.6",
+    "@milkdown/ctx": "^7.3.6",
+    "@milkdown/prose": "^7.3.6",
+    "@milkdown/transformer": "^7.3.6",
+    "@milkdown/utils": "^7.3.6"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix"
+  }
+}
